@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デコレーションケーキのご予約フォーム｜パティスリーカルメ</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="images/calme-rogo.svg" alt="パティスリーカルメのロゴ">
+                </div>
+                <h1>
+                    <span class="pattisserie">pattisserie</span>
+                    <span class="calme">Calme</span>
+                </h1>
+            </div>
+            </a>
+        </div>
+    </header>
+
+<section>
+    <div class="container cake-container">
+        <main>
+            <div class="cake-inner">
+                <h2> デコレーションケーキのご予約 </h2>
+                <p class="cake-contents">
+                    デコレーションケーキをこちらからご予約いただけます。<br>
+                    各事項をご入力の上、送信ボタンをクリックください。
+                </p>
+            </div>
+            <p>お急ぎのお客様やご予約をキャンセルされるお客様は電話にてお問い合わせください</p>
+            <table>
+                <tr>
+                    <td class="td-1">店舗へのお問い合わせ</td>
+                    <td class="tel">000-000-000</td>
+                </tr>
+            </table>
+            <h4>注意事項</h4>
+            <ul>
+                <li>お渡し日3営業日前までにご予約ください。</li>
+                <li>イラストプレートをご希望の場合は、5営業日前までにご予約ください</li>
+                <li>ご予約いただいたケーキをキャンセルされる場合は、お渡し日前日の17時までにお電話下さい。</li>
+                <li>ケーキのご予約はおひとり様１つまでとさせていただきます。２つ以上のご注文の場合はお電話にて承ります。</li>
+            </ul>
+            <form action="#">
+                <table>
+                    <tr>
+                        <td class="td-1">
+                            <label for="name-field">お名前</label>
+                            <span class="form-label">※必須</span>
+                        </td>
+                        <td class="td-2">
+                            <input type="name" name="name" id="name-field">
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td class="td-1"><label for="furigana-field">フリガナ</label>
+                            <span class="form-label">※必須</span>
+                        </td>
+                        <td class="td-2">
+                            <input type="name" name="name" id="furigana-field">
+                        </td>
+                    </tr>
+                
+                
+                    <tr>
+                        <td class="td-1">
+                            <label for="email-field">メールアドレス</label>
+                            <span class="form-label">※必須</span>
+                        </td>
+                        <td class="td-2">
+                            <input type="email" name="mail" id="email-field">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-1">
+                            <label for="kakunin-email-field">メールアドレス確認用</label>
+                            <span class="form-label">※必須</span>
+                        </td>
+                        <td class="td-2">
+                            <input type="email" name="mail-kakunin" id="kakunin-email-field">
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td class="td-1">
+                            <label for="tel-field">電話番号</label>
+                            <span class="form-label">※必須</span>
+                        </td>
+                        <td class="td-2">
+                            <input type="tel" name="tel" id="tel-field">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-1">
+                            <label for="date-field">ご希望のお渡し日をご入力ください</label>
+                            <span class="form-label">※必須</span>
+                        </td>
+                        <td class="td-2">
+                            <input type="date" name="date" id="date-field">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-1">
+                            <label for="">ケーキの種類とサイズをお選びください</label>
+                            <span class="form-label">※必須</span>
+                            <span class="note">※ケーキの種類によってお買い求めいただけるサイズが異なります。</span>
+                        </td>
+                        <td class="td-2">
+                            <select name="cake-size" id="">
+                                <option value="1">フルーツケーキ 12cm ￥3,000 (税込 ￥3,300)</option>
+                                <option value="2">フルーツケーキ 18cm ￥4,100 (税込 ￥4,510)</option>
+                                <option value="3">デコレーションチョコレートケーキ 12cm ￥3,000 (税込 ￥3,300)</option>
+                                <option value="4">デコレーションチョコレートケーキ 18cm ￥4,100 (税込 ￥4,510)</option>
+                                <option value="5">ベリーケーキ 15cm ￥3,200 (税込 ￥3,520)</option>
+                                <option value="6">シャルロットケーキ 15cm ￥3,500 (税込 ￥3,850)</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-1">
+                            <label for="">キャンドルの本数をお選びください</label>
+                            <span class="note">※最大で20本までとさせていただきます。</span>
+                        </td>
+                        <td class="td-2">
+                            <input type="text" size="1">本
+                        </td>
+
+                    <tr>
+                        <td class="td-1">
+                            <label for="">ナンバーキャンドルの数字をご記入ください</label>
+                            <span class="note">※別途料金(１本 ￥110)をいただきます</span>
+                        </td>
+                        <td class="td-2">
+                            <input type="text" size="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-1">
+                            <label for="">ご希望のイラストプレートの画像や文章をご記入ください</label>
+                            <span class="note">※画像はURLをご記入ください。お写真のプリントチョコは店頭にてお申し込みください</span>
+                        </td>
+                        <td class="td-2">
+                            <textarea name="illustplate" id="" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-1">
+                            <label for="">その他ご要望などございましたら、ご記入ください</label>
+                        </td>
+                        <td class="td-2">
+                            <textarea name="sonota" id="" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="container">
+        <p>&copy;20XX pattisserie Calme All Right Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
