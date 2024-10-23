@@ -98,9 +98,7 @@ header{
     display: block;
     width: 100px;
     height: 100px;
-    background: #FFF;
-    border-radius: 50%;
-    margin: 10px 0;
+    margin: 20px 0 10px 0;
 }
 .pattisserie{
     color: #F4EFE3;
@@ -116,12 +114,9 @@ header{
         width: 95px;
         height: 95px;
     }
-    .pattisserie{
-        font-size: 25px;
-        margin-left: 20px;
-    }
     .calme{
         font-size: 40px;
+        margin-left: 20px;
     }
 }
 
